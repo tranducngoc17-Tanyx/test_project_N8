@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tìm việc làm và cơ hội thực tập phù hợp cho sinh viên tại UniCareer.">
+  <title>Tìm việc làm & thực tập | UniCareer</title>
+  <link rel="icon" href="../../assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/candidate.css">
+  <script type="module" src="../../assets/js/candidate.js"></script>
+</head><body data-page="jobs">
+  <div id="site-header"></div>
+  <main class="page">
+    <section class="hero" aria-labelledby="hero-title"><div class="container">
+      <div class="eyebrow">UNICAREER · CƠ HỘI DÀNH CHO SINH VIÊN</div>
+      <h1 id="hero-title">Tìm đúng cơ hội.<br><span>Bắt đầu sự nghiệp.</span></h1>
+      <p>Khám phá việc làm và thực tập từ các doanh nghiệp. Lọc theo ngành nghề, địa điểm và kỹ năng để chọn công việc phù hợp.</p>
+      <form id="hero-search" class="hero-search" role="search" aria-label="Tìm công việc">
+        <label class="search-input-wrap" for="q"><span data-icon="search"></span><input id="q" name="q" type="search" autocomplete="off" placeholder="Chức danh, kỹ năng, từ khóa..." aria-label="Từ khóa tìm kiếm"></label>
+        <label class="search-location" for="location"><span data-icon="map-pin"></span><select id="location" name="location" aria-label="Địa điểm"><option value="">Tất cả địa điểm</option><option value="Hồ Chí Minh">TP. Hồ Chí Minh</option><option value="Hà Nội">Hà Nội</option><option value="Đà Nẵng">Đà Nẵng</option><option value="Làm việc từ xa">Làm việc từ xa</option></select></label>
+        <button class="btn btn-lg" type="submit"><span data-icon="search"></span>Tìm việc ngay</button>
+      </form>
+      <div class="hero-stats"><span><strong>01</strong> Hồ sơ cá nhân</span><span><strong>03</strong> Bước để ứng tuyển</span><span><strong>100%</strong> Dành cho sinh viên</span></div>
+    </div></section>
+    <section class="jobs-area"><div class="container">
+      <div class="section-title jobs-title"><div><h2>Việc làm & thực tập mới nhất</h2><p>Danh sách tin tuyển dụng đã duyệt và còn thời hạn ứng tuyển</p></div><button class="btn btn-outline mobile-filter-trigger" id="show-filters" type="button" aria-expanded="false" aria-controls="filter-panel"><span data-icon="sliders"></span>Bộ lọc</button></div>
+      <div class="jobs-layout">
+        <aside class="filters card" id="filter-panel" aria-label="Bộ lọc công việc">
+          <div class="filter-heading"><h3>Bộ lọc công việc</h3><button id="clear-filters" type="button">Xóa tất cả</button></div>
+          <div class="field"><label for="type">Loại hình công việc</label><select id="type" name="type"><option value="">Tất cả loại hình</option><option value="INTERNSHIP">Thực tập</option><option value="PART_TIME">Bán thời gian</option><option value="FULL_TIME">Toàn thời gian</option></select></div>
+          <div class="field"><label for="salary">Mức lương</label><select id="salary" name="salary"><option value="">Tất cả mức lương</option><option value="under5">Dưới 5 triệu</option><option value="5to10">5 – 10 triệu</option><option value="over10">Trên 10 triệu</option><option value="negotiable">Thỏa thuận</option></select></div>
+          <div class="field"><label for="experience">Kinh nghiệm</label><select id="experience" name="experience"><option value="">Tất cả kinh nghiệm</option><option value="Không yêu cầu">Không yêu cầu</option><option value="Dưới 1 năm">Dưới 1 năm</option><option value="1–2 năm">1 – 2 năm</option></select></div>
+          <p class="filter-note">Bộ lọc chỉ dùng dữ liệu đã có trong tin tuyển dụng theo SRS.</p>
+        </aside>
+        <div class="list-section"><div class="list-toolbar"><div><h3 id="result-count">Đang tải công việc...</h3><p id="search-description">Khám phá các vị trí đang tuyển</p></div><label for="sort" class="sr-only">Sắp xếp công việc</label><select id="sort" name="sort"><option value="newest">Mới đăng gần đây</option><option value="deadline">Hạn nộp sớm nhất</option><option value="salary">Lương cao trước</option></select></div>
+          <div id="job-results" class="job-list" aria-live="polite" aria-busy="true"><div class="loading">Đang tải danh sách việc làm...</div></div>
+          <nav class="pagination" id="pagination" aria-label="Phân trang kết quả"></nav>
+        </div>
+      </div>
+    </div></section>
+  </main><div id="site-footer"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
